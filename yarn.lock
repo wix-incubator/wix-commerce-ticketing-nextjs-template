@@ -48,6 +48,55 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@dnd-kit/accessibility@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "@dnd-kit/accessibility@npm:3.1.1"
+  dependencies:
+    tslib: ^2.0.0
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: f71b98b29e005d15c1300922b201bea9189aceeb15662e6e86231034f72b53812566361f8c14b0521278ac104f9703ca069d43f2c73862ea10181a2211ca5b27
+  languageName: node
+  linkType: hard
+
+"@dnd-kit/core@npm:^6.3.1":
+  version: 6.3.1
+  resolution: "@dnd-kit/core@npm:6.3.1"
+  dependencies:
+    "@dnd-kit/accessibility": ^3.1.1
+    "@dnd-kit/utilities": ^3.2.2
+    tslib: ^2.0.0
+  peerDependencies:
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: abe5ca5c63af2652b50df2636111a8eecb1560338f3b57e27af0d4eac31f89a278347049dbd59897aeec262477ef88d7a906a79254360c40480e490ee910947c
+  languageName: node
+  linkType: hard
+
+"@dnd-kit/sortable@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "@dnd-kit/sortable@npm:10.0.0"
+  dependencies:
+    "@dnd-kit/utilities": ^3.2.2
+    tslib: ^2.0.0
+  peerDependencies:
+    "@dnd-kit/core": ^6.3.0
+    react: ">=16.8.0"
+  checksum: c853cb65d2ffb3d58d400d9f1c993b00413932acf5cf5b780c76acf3b1057aa88e7866021c6b178c4b33fc17db7fe7640584dba4449772e02edcb72cc797eeb0
+  languageName: node
+  linkType: hard
+
+"@dnd-kit/utilities@npm:^3.2.2":
+  version: 3.2.2
+  resolution: "@dnd-kit/utilities@npm:3.2.2"
+  dependencies:
+    tslib: ^2.0.0
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 8a5015c2faa52760ab82a64287b2ac6a3d798867a1bca5ccbc1178560dbd9a1f9f1a21faea80f590ba1a4277c3eb7e7c4d3b4a39f1f32171bf6bc8174b370547
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:^0.8.2":
   version: 0.8.8
   resolution: "@emotion/is-prop-valid@npm:0.8.8"
@@ -2507,9 +2556,12 @@ __metadata:
   linkType: hard
 
 "@wix/ricos@npm:^10.112.0":
-  version: 10.120.1
-  resolution: "@wix/ricos@npm:10.120.1"
+  version: 10.121.2
+  resolution: "@wix/ricos@npm:10.121.2"
   dependencies:
+    "@dnd-kit/core": ^6.3.1
+    "@dnd-kit/sortable": ^10.0.0
+    "@dnd-kit/utilities": ^3.2.2
     "@floating-ui/react-dom": ^2.0.0
     "@loadable/component": ^5.14.1
     "@popperjs/core": 2.11.2
@@ -2525,7 +2577,6 @@ __metadata:
     "@wix/unidriver-jsdom-react": ^1.2.9
     "@wix/unidriver-puppeteer": ^1.1.2
     "@wix/wix-ui-icons-common": ^3.56.0
-    array-move: ^4.0.0
     chokidar: ^4.0.1
     classnames: ^2.5.1
     dataloader: ^2.2.2
@@ -2576,7 +2627,6 @@ __metadata:
     react-popper: 2.3.0
     react-portal-tooltip: ^2.4.7
     react-sizeme: ^3.0.2
-    react-sortable-hoc: ^2.0.0
     react-window: ~1.5.0
     rope-sequence: ^1.3.0
     tippy.js: ^6.3.1
@@ -2589,7 +2639,7 @@ __metadata:
     lodash: ^4.17.15
     react: ^16.14.0 || ^17.0.0 || ^18.0.0
     react-dom: ^16.14.0 || ^17.0.0 || ^18.0.0
-  checksum: c10aea7180120017ff26745f0887b7590b17313dd59bdcacc871cdd5974df8d3ca22a7a50d8372dd1207c7f3bc4985cdbc897d2296d6a05619bd5769b93f98f1
+  checksum: 29761e6a2848d6feb762b85d565411f8b8b13f539023faebabedbb3ea24aa878f4b09beaab1b5ae48c702aa035f26c23e77fbf54f0e7220756540cfbf7fab2bb
   languageName: node
   linkType: hard
 
@@ -3112,13 +3162,6 @@ __metadata:
     get-intrinsic: ^1.1.3
     is-string: ^1.0.7
   checksum: f22f8cd8ba8a6448d91eebdc69f04e4e55085d09232b5216ee2d476dab3ef59984e8d1889e662c6a0ed939dcb1b57fd05b2c0209c3370942fc41b752c82a2ca5
-  languageName: node
-  linkType: hard
-
-"array-move@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "array-move@npm:4.0.0"
-  checksum: 307e6716e83567918cf8dd0050cdb44ce500d9969cd734ecbf1f8ae547df151dbf10713255a9db6a8950ca917f4817a778f0116f6d13944c3f3cd1fd1845f13f
   languageName: node
   linkType: hard
 
@@ -9142,21 +9185,6 @@ __metadata:
     react: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
     react-dom: ^0.14.0 || ^15.0.1 || ^16.0.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   checksum: f7f843c4fb86b65fd39a6ed791d9b6a99efcdee4918a9033a7e2993fa5af0d4c3f7b02179e1a9a10ae3537c4a552e26b17ae2d80efc4644471a1083e91879f10
-  languageName: node
-  linkType: hard
-
-"react-sortable-hoc@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "react-sortable-hoc@npm:2.0.0"
-  dependencies:
-    "@babel/runtime": ^7.2.0
-    invariant: ^2.2.4
-    prop-types: ^15.5.7
-  peerDependencies:
-    prop-types: ^15.5.7
-    react: ^16.3.0 || ^17.0.0
-    react-dom: ^16.3.0 || ^17.0.0
-  checksum: c4930856eb8e9be638220423d452ddaab834aa43ff76069eeb057c6a5f1d0538f9e43c17bedd34bfd2a66ff4aa1e289557821d792db73a42ebf061bd1c92a423
   languageName: node
   linkType: hard
 
