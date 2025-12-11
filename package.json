@@ -28,7 +28,7 @@
     "flowbite-react": "^0.4.4",
     "js-cookie": "^3.0.1",
     "jsurl": "^0.1.5",
-    "next": "^13.4.9",
+    "next": "14.2.34",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-google-recaptcha-enterprise": "^1.0.3"
